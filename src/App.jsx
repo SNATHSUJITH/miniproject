@@ -51,7 +51,7 @@ const App = () => {
     setLoading(true);
     setError(null);
     try {
-      const response = await axios.post('http://suji-api-bhagyaj.in/api/getGeminiResponse', { data: searchText });
+      const response = await axios.post('https://suji-api-bhagyaj.in/api/getGeminiResponse', { data: searchText });
       setResult(response.data.result);
     } catch (error) {
       setError('Error calling the API');
