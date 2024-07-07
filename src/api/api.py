@@ -12,7 +12,7 @@ chat = model.start_chat(history=[])
 origins = [
     "http://localhost:3000",  # React dev server
     "http://localhost:5173",
-    "https://miniproject-one.vercel.app/"   # Vite dev server
+    "https://miniproject-one.vercel.app"   # Vite dev server
 ]
 
 app.add_middleware(
