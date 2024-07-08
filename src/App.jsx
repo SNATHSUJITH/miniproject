@@ -32,7 +32,7 @@ const ResultBox = styled(Paper)({
 });
 
 const Sidebar = styled(Box)({
-  width: '10%', // Adjust the width of the sidebar as needed
+  width: '20%', // Adjust the width of the sidebar as needed
   height: '100vh', // Full height sidebar
   backgroundColor: '#424242', // Updated to match the main content box color
 });
@@ -149,7 +149,7 @@ const App = () => {
         {result && (
 
           
-          <ResultBox elevation={3} sx={{ width: '75%', backgroundColor: '#e1f5fe' }}>  
+          <ResultBox elevation={3} sx={{ width: '85%', backgroundColor: '#e1f5fe' }}>  
             <Typography
               variant="body1"
               component="pre"
