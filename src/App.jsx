@@ -35,6 +35,25 @@ const Sidebar = styled(Box)({
   width: '20%', // Adjust the width of the sidebar as needed
   height: '100vh', // Full height sidebar
   backgroundColor: '#424242', // Updated to match the main content box color
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  justifyContent: 'flex-start', // Align items to the start (top)
+  padding: '1rem',
+  boxSizing: 'border-box',
+});
+
+const WorkspaceInput = styled('textarea')({
+  width: '100%',
+  height: '80vh',
+  marginTop: '1rem',
+  padding: '1rem',
+  borderRadius: '8px',
+  border: '1px solid #ccc',
+  fontSize: '1rem',
+  fontFamily: 'Arial, sans-serif',
+  resize: 'none',
+  boxSizing: 'border-box',
 });
 
 const App = () => {
@@ -80,12 +99,26 @@ const App = () => {
       }}
     >
       {/* Left Sidebar */}
-      <Sidebar />
+      <Sidebar>
+        <Typography
+          variant="body1"
+          sx={{
+            color: '#ffffff', // White text color
+            fontFamily: "cursive",
+            fontWeight: 'lighter',
+            fontSize: '1.5rem',
+            textAlign: 'center',
+            marginBottom: '1rem', // Add margin to bottom of the message
+          }}
+        >
+          Get the answers to your questions. Use the Chatbot to clear your doubts.
+        </Typography>
+      </Sidebar>
 
       {/* Main Content Area */}
       <Box
         sx={{
-          width: { xs: '100%', sm: '80%', md: '80%' }, // Adjust the width of the main content
+          width: { xs: '100%', sm: '80%', md: '60%' }, // Adjust the width of the main content
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
@@ -147,8 +180,6 @@ const App = () => {
         )}
 
         {result && (
-
-          
           <ResultBox elevation={3} sx={{ width: '85%', backgroundColor: '#e1f5fe' }}>  
             <Typography
               variant="body1"
@@ -169,7 +200,22 @@ const App = () => {
       </Box>
 
       {/* Right Sidebar */}
-      <Sidebar />
+      <Sidebar>
+        <Typography
+          variant="h5"
+          sx={{
+            color: '#ffffff', // White text color
+            fontFamily: "'Roboto', sans-serif",
+            fontWeight: 'bold',
+            fontSize: '1.5rem',
+            textAlign: 'center',
+            marginBottom: '1rem', // Add margin to bottom of the message
+          }}
+        >
+          Workspace
+        </Typography>
+        <WorkspaceInput placeholder="Type here..." />
+      </Sidebar>
     </Box>
   );
 };
