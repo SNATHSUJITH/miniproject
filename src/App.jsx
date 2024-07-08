@@ -11,14 +11,14 @@ const CustomInputBase = styled(InputBase)({
 });
 
 const CustomButton = styled(Button)({
-  backgroundColor: '#303f9f',  // Hexadecimal color code for default blue
+  backgroundColor: '#37474f',  // Hexadecimal color code for default blue
   color: '#fff',
   fontSize: '1rem',
   transition: 'transform 0.2s ease-in-out',
   borderRadius: '50px', // Increase borderRadius for a more rounded button
   '&:hover': {
-    backgroundColor: '#1565c0',  // Darker shade of blue on hover
-    transform: 'scale(1.05)',
+    backgroundColor: '#263238',  // Darker shade of blue on hover
+    transform: 'scale(1.07)',
   },
 });
 
@@ -34,7 +34,7 @@ const ResultBox = styled(Paper)({
 const Sidebar = styled(Box)({
   width: '10%', // Adjust the width of the sidebar as needed
   height: '100vh', // Full height sidebar
-  backgroundColor: '#651fff', // Updated to match the main content box color
+  backgroundColor: '#424242', // Updated to match the main content box color
 });
 
 const App = () => {
@@ -73,7 +73,7 @@ const App = () => {
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'center',
-        backgroundColor: '#e8eaf6', // Light gray background, Which is the background white color
+        backgroundColor: '#e0e0e0', // Light gray background, Which is the background white color
         minHeight: '100vh',
         padding: '0', // Remove default padding
         margin: '0', // Remove default margin
@@ -97,7 +97,7 @@ const App = () => {
           sx={{
             height: '180px', // Adjust the height as needed, e.g., '300px', '100%', etc.
             width: '1080px', // Adjusted width
-            backgroundColor: '#651fff', // Instagram's purple color
+            backgroundColor: '#424242', // Instagram's purple color
             padding: '1rem',
             borderRadius: '16px',
             marginBottom: '2rem',
@@ -107,7 +107,7 @@ const App = () => {
             variant="h4"
             align="center"
             sx={{
-              color: '#fff', // White text color
+              color: '#fdd835', // White text color
               fontFamily: "'Pacifico', cursive",
               fontWeight: 'bold',
               fontSize: '290%', // Increase font size by 20%
